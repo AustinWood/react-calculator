@@ -1,18 +1,17 @@
 import React from 'react';
 
-class Calculator extends React.Component{
-  constructor(props){
+class Calculator extends React.Component {
+  constructor(props) {
     super(props);
-    //your code here
+    this.state = { num1: "", num2: "", result: 0 };
   }
 
-  //your code here
+  // your code here
 
-  render(){
+  render() {
     return (
       <div>
-        <h1>Hello World</h1>
-        //your code will replace this
+        <h1>{this.state.result}</h1>
       </div>
     );
   }
